@@ -1,0 +1,29 @@
+{
+  "name": "servidor-ps-node",
+  "version": "1.0.0",
+  "description": "Servidor local para rodar o modelo de IA do Google no site Python School",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.13.1"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file=.env index.js",
+    "start": "node --env-file=.env index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ia",
+    "google",
+    "gemini"
+  ],
+  "author": "Rosiel Victor <rosielvictor.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.2",
+    "@misterioso013/ipcli": "^1.0.4",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
